@@ -130,8 +130,8 @@ def validate_duration_input():
 duration_entry.bind('<FocusOut>', lambda event: validate_duration_input())
 
 day_menu = tk.OptionMenu(frame, day_var, *days)
-day_menu.config(bg="lightyellow")  # Menambahkan warna latar belakang untuk dropdown menu
-day_menu["menu"].config(bg="lightyellow")  # Menambahkan warna latar belakang untuk menu dropdown
+day_menu.config(bg="lightyellow")  
+day_menu["menu"].config(bg="lightyellow")  
 day_menu.grid(row=1, column=1, padx=5, pady=5)
 
 add_task_button = tk.Button(frame, text="Add Task", command=add_task, bg="lightblue")
